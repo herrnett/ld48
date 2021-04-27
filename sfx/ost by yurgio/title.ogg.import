@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/title.ogg-aa93f9608c55f99d0d5d5a275cc7f995.oggstr"
+
+[deps]
+
+source_file="res://sfx/ost by yurgio/title.ogg"
+dest_files=[ "res://.import/title.ogg-aa93f9608c55f99d0d5d5a275cc7f995.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

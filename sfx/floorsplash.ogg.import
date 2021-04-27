@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/floorsplash.ogg-099d1a61ae7111a68a85fc0aef00c369.oggstr"
+
+[deps]
+
+source_file="res://sfx/floorsplash.ogg"
+dest_files=[ "res://.import/floorsplash.ogg-099d1a61ae7111a68a85fc0aef00c369.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

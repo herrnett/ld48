@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LD48_Spur_05.ogg-d30f2dae7352aa7cf303d2229f576e08.oggstr"
+
+[deps]
+
+source_file="res://sfx/ost by yurgio/LD48_Spur_05.ogg"
+dest_files=[ "res://.import/LD48_Spur_05.ogg-d30f2dae7352aa7cf303d2229f576e08.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

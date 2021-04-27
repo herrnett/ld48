@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/pstp_verysmall.tres" type="DynamicFont" id=1]
+[ext_resource path="res://nodes/Outro.gd" type="Script" id=3]
+
+[node name="Outro" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -32.0
+margin_top = -16.0
+margin_right = 416.0
+margin_bottom = 240.0
+color = Color( 0.168627, 0.0313726, 0.0313726, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 288.0
+margin_bottom = 176.0
+custom_fonts/normal_font = ExtResource( 1 )
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
