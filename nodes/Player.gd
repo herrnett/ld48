@@ -24,9 +24,19 @@ func _physics_process(delta):
 		else: Globals.water = 500
 	$Camera2D/Water.text = "Water: " +  str(floor(Globals.water/5)) + "%"
 	if moving:
-		look_at(get_global_mouse_position())
 		var x_input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 		var y_input = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+		if x_input < 0:
+			$AnimatedSprite.animation = "default" 
+			$AnimatedSprite.flip_h = false
+		elif x_input > 0: 
+			$AnimatedSprite.animation = "default" 
+			$AnimatedSprite.flip_h = true
+		elif y_input != 0:
+			 $AnimatedSprite.animation = "default" 
+		else: $AnimatedSprite.animation = "wait"
+		if get_global_mouse_position().x < position.x: $AnimatedSprite.flip_h = false
+		elif get_global_mouse_position().x > position.x: $AnimatedSprite.flip_h = true
 		move_and_slide(Vector2(x_input, y_input)*150)
 		check_collision()
 		if Input.is_action_pressed("ui_mouse_left"):
